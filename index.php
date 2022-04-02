@@ -1,9 +1,13 @@
+<?php
+    require "./config/main.php";
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
-		<title>LIANG23 账号提交</title>
+		<title>远方网课-账户提交</title>
 		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 	</head>
 	<body onmouseover="ifphone()">
@@ -25,6 +29,7 @@
 		<!-- 表单区域 -->
 		<form action="insert.php" method="post">
 		<br>
+		<marquee><span style="font-weight: bolder;font-size: 16px;color: red;" class = "<?php echo $textcls?>"><?php echo $gg?></span></marquee>
          <label for="school">基本信息：</label>
 		   <div class="form-group">
 		  <select class="form-control" id="exampleFormControlSelect1" name="type">
